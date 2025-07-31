@@ -11,7 +11,16 @@ public:
      
       
          string reversed = cleaned;
-        reverse(reversed.begin(), reversed.end());
+        int left=0,right=cleaned.size()-1;
+         while (left < right) {
+            if (cleaned[left] != cleaned[right]) {
+                return false;
+            }
+            ++left;
+            --right;
+        }
+
+        return true;
 
         // Compare cleaned and reversed strings
         return cleaned == reversed;
