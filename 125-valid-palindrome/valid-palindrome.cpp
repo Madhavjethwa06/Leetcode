@@ -9,7 +9,7 @@ public:
         }
        
      
-        string temp=cleaned;
+      
          string reversed = cleaned;
         reverse(reversed.begin(), reversed.end());
 
