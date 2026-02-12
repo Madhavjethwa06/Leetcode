@@ -24,15 +24,11 @@ public:
                 }
                 if(sum>0){
                     r--;
-                    while(r>l && nums[r]==nums[r+1]){
-                        r--;
-                    }
+                    
                 }
                 if(sum<0){
                     l++;
-                    while(l<n && nums[l]==nums[l-1]){
-                        l++;
-                    }
+                    
                 }
              } 
         }
