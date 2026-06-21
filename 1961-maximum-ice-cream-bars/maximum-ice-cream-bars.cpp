@@ -8,6 +8,8 @@ public:
             if(i<=coins){
                 ans++;
                 coins-=i;
+            }else{
+                break;
             }
         }
         return ans;
